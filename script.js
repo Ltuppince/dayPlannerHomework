@@ -4,10 +4,10 @@ $(document).ready(function() {
     var currentDate = m.format("MMM Do YYYY");
     var currentHour = moment().hours();
 
-    $("#currentDay").text("Today's Date: " + currentDate);
+    $("#currentDay").text("Today's Date: " + currentTime);
 
     $(".saveBtn").on("click", function() {
-        console.log("saveBtn");        
+        console.log(".saveBtn");        
        var eventInput = $("#description").val();
        localStorage.setItem($((this).attr("data-value")), eventInput);
 
